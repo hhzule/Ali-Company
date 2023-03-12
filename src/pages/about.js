@@ -338,25 +338,25 @@ const Contact = ({ data }) => {
                 </chakra.form>
               </GridItem>
 
-              {/* <form
-              name="Contact Form"
-              method="POST"
-              data-netlify="true"
-              data-netlify-recaptcha="true"
-              action="/thank-you"
-            >
-              <input type="hidden" name="form-name" value="Contact Form" />
-              <div>
-                <label>Your Email:</label>
-                <input type="email" name="email" />
-              </div>
-              <div>
-                <label>Message:</label>
-                <textarea name="message" />
-                <ReCAPTCHA sitekey="{process.env.GATSBY_RECAPTCHA_KEY}" />
-              </div>
-              <button type="submit">Send</button>
-            </form> */}
+              <form
+                name="Contact Form"
+                method="POST"
+                data-netlify="true"
+                data-netlify-recaptcha="true"
+                action="/thank-you"
+              >
+                <input type="hidden" name="form-name" value="Contact Form" />
+                <div>
+                  <label>Your Email:</label>
+                  <input type="email" name="email" />
+                </div>
+                <div>
+                  <label>Message:</label>
+                  <textarea name="message" />
+                  <ReCAPTCHA sitekey="{process.env.GATSBY_RECAPTCHA_KEY}" />
+                </div>
+                <button type="submit">Send</button>
+              </form>
             </SimpleGrid>
           </Box>
         </Box>

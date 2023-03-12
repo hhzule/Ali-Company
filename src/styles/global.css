@@ -1,0 +1,11 @@
+body{
+    background-color: #0d1f2d;
+    color: white;
+}
+#gatsby-focus-wrapper{
+    background-color: #0d1f2d;
+    
+}
+.chakra-heading{
+    color: white !important;
+}

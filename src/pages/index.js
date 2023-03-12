@@ -22,13 +22,13 @@ const Index = ({ data }) => {
       <Text color={"gray.500"}>
         Providing Consultation and Development Services in Web3
       </Text>
-      {/* {data.allContentfulServices.nodes.map((content) => {
+      {data.allContentfulServices.nodes.map(content => {
         return (
           <div key={content.id}>
             <Services content={content}></Services>
           </div>
-        );
-      })} */}
+        )
+      })}
     </Layout>
   )
 }

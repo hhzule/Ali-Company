@@ -88,9 +88,10 @@ const Blog = ({ data }) => {
                     fontSize={"sm"}
                     letterSpacing={1.1}
                   >
-                    {/* {renderRichText(node.description)} 
-            {documentToPlainTextString(
-      JSON.parse(node.description.raw))}   */}
+                    {renderRichText(node.description)}
+                    {documentToPlainTextString(
+                      JSON.parse(node.description.raw)
+                    )}
                   </Text>
                 </Stack>
                 <Stack mt={6} direction={"row"} spacing={4} align={"center"}>

@@ -360,7 +360,7 @@ const Contact = ({ data }) => {
             </SimpleGrid>
           </Box>
         </Box>
-        <ContactFormPage />
+        {/* <ContactFormPage /> */}
       </Layout>
     </>
   )

@@ -11,6 +11,7 @@ class ContactFormPage extends React.Component {
   }
 
   handleSubmit(event) {
+    console.log("i ran")
     // Do not submit form via HTTP, since we're doing that via XHR request.
     event.preventDefault()
     // Loop through this component's refs (the fields) and add them to the
@@ -70,6 +71,9 @@ class ContactFormPage extends React.Component {
           <h1>Message</h1>
           <textarea ref="message" name="message" />
         </form>
+        <button styles={{ color: "white important!" }} type="submit">
+          Send
+        </button>
       </>
     )
   }

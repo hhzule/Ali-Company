@@ -104,6 +104,10 @@ const Contact = ({ data }) => {
                   overflow={{
                     sm: "hidden",
                   }}
+                  name="Contact Form"
+                  data-netlify="true"
+                  // data-netlify-recaptcha="true"
+                  action="/thank-you"
                 >
                   <Stack
                     px={4}
@@ -115,6 +119,11 @@ const Contact = ({ data }) => {
                     }}
                     spacing={6}
                   >
+                    <input
+                      type="hidden"
+                      name="form-name"
+                      value="Contact Form"
+                    />
                     <SimpleGrid columns={6} spacing={6}>
                       <FormControl as={GridItem} colSpan={[6, 3]}>
                         <FormLabel
@@ -262,7 +271,7 @@ const Contact = ({ data }) => {
                 </chakra.form>
               </GridItem>
 
-              <form
+              {/* <form
                 name="Contact Form"
                 method="POST"
                 data-netlify="true"
@@ -277,10 +286,10 @@ const Contact = ({ data }) => {
                 <div>
                   <label>Message:</label>
                   <textarea name="message" />
-                  {/* <ReCAPTCHA sitekey="{process.env.GATSBY_RECAPTCHA_KEY}" /> */}
+                  {/* <ReCAPTCHA sitekey="{process.env.GATSBY_RECAPTCHA_KEY}" /> 
                 </div>
                 <button type="submit">Send</button>
-              </form>
+              </form> */}
             </SimpleGrid>
           </Box>
         </Box>

@@ -19,7 +19,6 @@ const Services = ({ content }) => {
         // }}
         p={50}
         w="full"
-        minWidth={"736px"}
         alignItems="center"
         justifyContent="center"
       >

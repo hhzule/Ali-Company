@@ -57,18 +57,7 @@ const Contact = ({ data }) => {
                 base: "initial",
                 md: "grid",
               }}
-              columns={{
-                md: 3,
-              }}
-              spacing={{
-                md: 6,
-              }}
             >
-              <GridItem
-                colSpan={{
-                  md: 1,
-                }}
-              ></GridItem>
               <GridItem
                 mt={[5, null, 0]}
                 colSpan={{
@@ -89,16 +78,7 @@ const Contact = ({ data }) => {
                   data-netlify="true"
                   action="/thank-you"
                 >
-                  <Stack
-                    px={4}
-                    py={5}
-                    p={[null, 6]}
-                    bg="white"
-                    _dark={{
-                      bg: "#141517",
-                    }}
-                    spacing={6}
-                  >
+                  <Stack px={4} py={5} p={[null, 6]} bg="gray.50" spacing={6}>
                     <input
                       type="hidden"
                       name="form-name"
@@ -219,9 +199,6 @@ const Contact = ({ data }) => {
                     }}
                     py={3}
                     bg="gray.50"
-                    _dark={{
-                      bg: "#121212",
-                    }}
                     textAlign="right"
                   >
                     <Button

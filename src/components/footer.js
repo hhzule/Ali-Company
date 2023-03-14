@@ -74,18 +74,28 @@ const Footer = () => {
             }}
           >
             <Flex justify="start" direction="column">
-              <Link textTransform="uppercase">Product</Link>
-              <Link textTransform="uppercase">Services</Link>
-              <Link textTransform="uppercase">Research</Link>
+              <Link textTransform="uppercase" to="/product">
+                Product
+              </Link>
+              <Link textTransform="uppercase" to="/">
+                Services
+              </Link>
+              <Link textTransform="uppercase" to="/research">
+                Research
+              </Link>
             </Flex>
             <Flex justify="start" direction="column">
-              <Link textTransform="uppercase">About Us</Link>
+              <Link textTransform="uppercase" to="/about">
+                About Us
+              </Link>
 
               <Link textTransform="uppercase" to="/about#form">
                 Contact Us
               </Link>
 
-              <Link textTransform="uppercase">Resources</Link>
+              <Link textTransform="uppercase" to="/blog">
+                Resources
+              </Link>
             </Flex>
           </HStack>
         </Stack>

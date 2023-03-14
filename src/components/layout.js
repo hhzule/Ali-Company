@@ -1,80 +1,75 @@
-import React from 'react';
-import Header from './header';
-import Footer from "./footer";
-import '../styles/global.css'
+import React from "react"
+import Header from "./header"
+import Footer from "./footer"
+import "../styles/global.css"
 
 import {
-    Box,
-    Heading,
-    Container,
-    Text,
-    // Button,
-    Stack,
-    Icon,
-    useColorModeValue,
-    createIcon,
-  } from '@chakra-ui/react';
+  Box,
+  Heading,
+  Container,
+  Text,
+  // Button,
+  Stack,
+  Icon,
+  useColorModeValue,
+  createIcon,
+} from "@chakra-ui/react"
 
-const Layout = (props) => {
+const Layout = props => {
   return (
     <div>
-         <Header />
-              <Container maxW={'3xl'}>
-                
+      <Header />
+      <Container maxW={"3xl"}>
         <Stack
           as={Box}
-          textAlign={'center'}
+          textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}>
-                 
-   
+          py={{ base: 20, md: 36 }}
+        >
           <Heading
             fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
-            We Serve you in<br />
-            <Text as={'span'} color={'green.400'}>
+            fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+            lineHeight={"110%"}
+          >
+            We Serve you in
+            <br />
+            <Text as={"span"} color={"green.400"}>
               your Web3 innovations
             </Text>
           </Heading>
 
           {props.children}
-     
-          <Stack
-            direction={'column'}
-            spacing={3}
-            align={'center'}
-            alignSelf={'center'}
-            position={'relative'}>
 
- 
+          <Stack
+            direction={"column"}
+            spacing={3}
+            align={"center"}
+            alignSelf={"center"}
+            position={"relative"}
+          >
             <Box>
               <Icon
                 as={Arrow}
-                color={useColorModeValue('gray.800', 'gray.300')}
+                color={useColorModeValue("gray.800", "gray.300")}
                 w={71}
-                position={'absolute'}
+                position={"absolute"}
                 right={-71}
-                top={'10px'}
+                top={"10px"}
               />
-    
             </Box>
           </Stack>
         </Stack>
         <Footer />
       </Container>
-
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
-
-
+export default Layout
 
 const Arrow = createIcon({
-  displayName: 'Arrow',
-  viewBox: '0 0 72 24',
+  displayName: "Arrow",
+  viewBox: "0 0 72 24",
   path: (
     <path
       fillRule="evenodd"
@@ -83,4 +78,4 @@ const Arrow = createIcon({
       fill="currentColor"
     />
   ),
-});
+})

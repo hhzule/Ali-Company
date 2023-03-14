@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Services from "../components/services"
 import Seo from "../components/seo"
-import { Flex, Text } from "@chakra-ui/react"
+import { Text } from "@chakra-ui/react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
 const Index = ({ data }) => {

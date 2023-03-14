@@ -5,17 +5,13 @@ import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { documentToPlainTextString } from "@contentful/rich-text-plain-text-renderer"
 import {
   Box,
-  Center,
   Heading,
   Image,
   Text,
   Stack,
   Flex,
-  Avatar,
-  useColorModeValue,
   extendTheme,
 } from "@chakra-ui/react"
-import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
 const Blog = ({ data }) => {
@@ -95,10 +91,10 @@ const Blog = ({ data }) => {
                   </Text>
                 </Stack>
                 <Stack mt={6} direction={"row"} spacing={4} align={"center"}>
-                  <Avatar
+                  {/* <Avatar
                     src={"https://avatars0.githubusercontent.com/u/1164541?v=4"}
                     alt={"Author"}
-                  />
+                  /> */}
                   <Stack direction={"column"} spacing={0} fontSize={"sm"}>
                     <Text
                       color={"blue.400"}

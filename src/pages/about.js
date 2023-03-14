@@ -1,40 +1,25 @@
 import React from "react"
-import ReCAPTCHA from "react-google-recaptcha"
 import Layout from "../components/layout"
 import {
   Box,
-  Flex,
   Text,
-  Avatar,
   SimpleGrid,
   GridItem,
   Heading,
   chakra,
   FormControl,
   FormLabel,
-  InputGroup,
-  InputLeftAddon,
   Textarea,
-  Icon,
-  Divider,
   Input,
-  Radio,
-  RadioGroup,
   Select,
-  Checkbox,
-  VisuallyHidden,
-  FaUser,
-  FormHelperText,
   Link as ChL,
   Button,
   Stack,
 } from "@chakra-ui/react"
 import TeamCard from "../components/teamCards"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import ContactFormPage from "../components/contact"
 
 const Contact = ({ data }) => {
-  // console.log("data", data)
   return (
     <>
       <Layout>
@@ -83,11 +68,7 @@ const Contact = ({ data }) => {
                 colSpan={{
                   md: 1,
                 }}
-              >
-                {/* <Box px={[4, 0]}>
-
-                </Box> */}
-              </GridItem>
+              ></GridItem>
               <GridItem
                 mt={[5, null, 0]}
                 colSpan={{
@@ -106,7 +87,6 @@ const Contact = ({ data }) => {
                   }}
                   name="Contact Form"
                   data-netlify="true"
-                  // data-netlify-recaptcha="true"
                   action="/thank-you"
                 >
                   <Stack
@@ -198,18 +178,6 @@ const Contact = ({ data }) => {
                             sm: "sm",
                           }}
                         />
-                        {/* <Input
-                          type="textarea"
-                          name="email_address"
-                          id="email_address"
-                          autoComplete="email"
-                          mt={1}
-                          focusBorderColor="brand.400"
-                          shadow="sm"
-                          size="sm"
-                          w="full"
-                          rounded="md"
-                        /> */}
                       </FormControl>
 
                       <FormControl as={GridItem} colSpan={[6, 3]}>
@@ -270,30 +238,9 @@ const Contact = ({ data }) => {
                   </Box>
                 </chakra.form>
               </GridItem>
-
-              {/* <form
-                name="Contact Form"
-                method="POST"
-                data-netlify="true"
-                // data-netlify-recaptcha="true"
-                action="/thank-you"
-              >
-                <input type="hidden" name="form-name" value="Contact Form" />
-                <div>
-                  <label>Your Email:</label>
-                  <input type="email" name="email" />
-                </div>
-                <div>
-                  <label>Message:</label>
-                  <textarea name="message" />
-                  {/* <ReCAPTCHA sitekey="{process.env.GATSBY_RECAPTCHA_KEY}" /> 
-                </div>
-                <button type="submit">Send</button>
-              </form> */}
             </SimpleGrid>
           </Box>
         </Box>
-        {/* <ContactFormPage /> */}
       </Layout>
     </>
   )
